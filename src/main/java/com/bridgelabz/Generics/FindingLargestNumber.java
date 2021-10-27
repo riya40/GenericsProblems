@@ -1,36 +1,37 @@
 package com.bridgelabz.Generics;
 import java.util.*;
 public class FindingLargestNumber {
-    int a,b,c;
+    static int a,b,c;
     Scanner s=new Scanner(System.in);
 
-    public void intlargest(){
-        int a=s.nextInt();
-        int b=s.nextInt();
-        int c=s.nextInt();
+    public int intlargest(){
+        int a=5;
+        int b=4;
+        int c=3;
         if(a>b && a>c){
-            System.out.println("the largest is"+a);
+            return a;
         }
         else if(b>a && b>c){
-            System.out.println("the largest is:"+b);
+            return b;
         }
         else{
-            System.out.println("the largest is"+c);
+            return c;
         }
+
     }
-    public void floatlargest(){
+    public float floatlargest(){
         float a,b,c;
         a=s.nextFloat();
         b=s.nextFloat();
         c=s.nextFloat();
         if(a>b && a>c){
-            System.out.println("the largest is"+a);
+            return a;
         }
         else if(b>a && b>c){
-            System.out.println("the largest is:"+b);
+            return b;
         }
         else{
-            System.out.println("the largest is"+c);
+            return c;
         }
 
     }
@@ -47,7 +48,6 @@ public class FindingLargestNumber {
         System.out.println(result3);
 
     }
-
 
     public static void main(String[] args) {
         FindingLargestNumber m=new FindingLargestNumber();
